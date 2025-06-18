@@ -112,7 +112,7 @@ const Navbar = () => {
                     rel="noopener noreferrer"
                     className="flex items-center justify-between px-4 py-2 text-base text-slate-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                   >
-                    <span>HRM Portal</span>
+                    <span>Hub Portal</span>
                     <ExternalLink className="h-4 w-4" />
                   </a>
                 </div>
@@ -127,7 +127,7 @@ const Navbar = () => {
                 aria-expanded={activeDropdown === 'techforgood'}
                 aria-label="Tech for Good Menu"
               >
-                <span>Tech for Good</span>
+                <span>Resources</span>
                 <ChevronDown className={`h-5 w-5 transition-transform ${activeDropdown === 'techforgood' ? 'rotate-180' : ''}`} />
               </button>
               
@@ -138,7 +138,7 @@ const Navbar = () => {
                     onClick={closeDropdowns}
                     className="block px-4 py-2 text-base text-slate-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                   >
-                    Our Programs
+                    Tech for Good
                   </Link>
                   <Link
                     to="/how-it-works"
