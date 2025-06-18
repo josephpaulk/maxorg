@@ -169,6 +169,7 @@ Bridging the digital divide with trusted, local IT solutions, Maxsys connects co
     </div>
   </div>
 </div>
+              </div>
           </div>
         </div>
       </section>
