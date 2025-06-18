@@ -22,34 +22,37 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3">
+          <Link to="/" className="flex items-center space-x-3" aria-label="Maxsys International Home">
             <img 
               src="/logo.png" 
-              alt="Maxis International - Tech for Good" 
+              alt="Maxsys International - Tech for Good" 
               className="h-10 w-auto"
             />
+            <span className="text-xl font-bold text-slate-800 hidden sm:inline">Maxsys</span>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
             <Link
               to="/"
-              className={`text-sm font-medium transition-colors duration-200 ${
+              className={`text-base font-medium transition-colors duration-200 ${
                 isActive('/')
                   ? 'text-blue-600 border-b-2 border-blue-600 pb-1'
                   : 'text-slate-700 hover:text-blue-600'
               }`}
+              aria-label="Home"
             >
               Home
             </Link>
 
             <Link
               to="/about"
-              className={`text-sm font-medium transition-colors duration-200 ${
+              className={`text-base font-medium transition-colors duration-200 ${
                 isActive('/about')
                   ? 'text-blue-600 border-b-2 border-blue-600 pb-1'
                   : 'text-slate-700 hover:text-blue-600'
               }`}
+              aria-label="About Us"
             >
               About Us
             </Link>
@@ -58,10 +61,12 @@ const Navbar = () => {
             <div className="relative">
               <button
                 onClick={() => handleDropdownToggle('marketplace')}
-                className="flex items-center space-x-1 text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors duration-200"
+                className="flex items-center space-x-1 text-base font-medium text-slate-700 hover:text-blue-600 transition-colors duration-200"
+                aria-expanded={activeDropdown === 'marketplace'}
+                aria-label="Marketplace Menu"
               >
                 <span>Marketplace</span>
-                <ChevronDown className={`h-4 w-4 transition-transform ${activeDropdown === 'marketplace' ? 'rotate-180' : ''}`} />
+                <ChevronDown className={`h-5 w-5 transition-transform ${activeDropdown === 'marketplace' ? 'rotate-180' : ''}`} />
               </button>
               
               {activeDropdown === 'marketplace' && (
@@ -69,14 +74,14 @@ const Navbar = () => {
                   <Link
                     to="/for-nonprofits"
                     onClick={closeDropdowns}
-                    className="block px-4 py-2 text-sm text-slate-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    className="block px-4 py-2 text-base text-slate-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                   >
                     For Nonprofits
                   </Link>
                   <Link
                     to="/for-freelancers"
                     onClick={closeDropdowns}
-                    className="block px-4 py-2 text-sm text-slate-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    className="block px-4 py-2 text-base text-slate-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                   >
                     For Freelancers
                   </Link>
@@ -85,19 +90,19 @@ const Navbar = () => {
                     href="https://hub.maxsys.org"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-between px-4 py-2 text-sm text-slate-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    className="flex items-center justify-between px-4 py-2 text-base text-slate-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                   >
                     <span>Browse Projects</span>
-                    <ExternalLink className="h-3 w-3" />
+                    <ExternalLink className="h-4 w-4" />
                   </a>
                   <a
                     href="https://hrm.maxsys.org"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-between px-4 py-2 text-sm text-slate-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    className="flex items-center justify-between px-4 py-2 text-base text-slate-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                   >
                     <span>HRM Portal</span>
-                    <ExternalLink className="h-3 w-3" />
+                    <ExternalLink className="h-4 w-4" />
                   </a>
                 </div>
               )}
@@ -107,10 +112,12 @@ const Navbar = () => {
             <div className="relative">
               <button
                 onClick={() => handleDropdownToggle('techforgood')}
-                className="flex items-center space-x-1 text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors duration-200"
+                className="flex items-center space-x-1 text-base font-medium text-slate-700 hover:text-blue-600 transition-colors duration-200"
+                aria-expanded={activeDropdown === 'techforgood'}
+                aria-label="Tech for Good Menu"
               >
                 <span>Tech for Good</span>
-                <ChevronDown className={`h-4 w-4 transition-transform ${activeDropdown === 'techforgood' ? 'rotate-180' : ''}`} />
+                <ChevronDown className={`h-5 w-5 transition-transform ${activeDropdown === 'techforgood' ? 'rotate-180' : ''}`} />
               </button>
               
               {activeDropdown === 'techforgood' && (
@@ -118,28 +125,28 @@ const Navbar = () => {
                   <Link
                     to="/tech-for-good"
                     onClick={closeDropdowns}
-                    className="block px-4 py-2 text-sm text-slate-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    className="block px-4 py-2 text-base text-slate-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                   >
                     Our Programs
                   </Link>
                   <Link
                     to="/how-it-works"
                     onClick={closeDropdowns}
-                    className="block px-4 py-2 text-sm text-slate-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    className="block px-4 py-2 text-base text-slate-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                   >
                     How It Works
                   </Link>
                   <Link
                     to="/resources"
                     onClick={closeDropdowns}
-                    className="block px-4 py-2 text-sm text-slate-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    className="block px-4 py-2 text-base text-slate-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                   >
                     Resources & Training
                   </Link>
                   <Link
                     to="/partner-with-us"
                     onClick={closeDropdowns}
-                    className="block px-4 py-2 text-sm text-slate-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    className="block px-4 py-2 text-base text-slate-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                   >
                     Partner With Us
                   </Link>
@@ -149,11 +156,12 @@ const Navbar = () => {
 
             <Link
               to="/contact"
-              className={`text-sm font-medium transition-colors duration-200 ${
+              className={`text-base font-medium transition-colors duration-200 ${
                 isActive('/contact')
                   ? 'text-blue-600 border-b-2 border-blue-600 pb-1'
                   : 'text-slate-700 hover:text-blue-600'
               }`}
+              aria-label="Contact"
             >
               Contact
             </Link>
@@ -161,7 +169,10 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:flex items-center">
-            <button className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-2 rounded-lg hover:from-blue-600 hover:to-indigo-700 transition-all duration-200 text-sm font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+            <button
+              className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-2 rounded-lg hover:from-blue-600 hover:to-indigo-700 transition-all duration-200 text-base font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+              aria-label="Donate to Maxsys"
+            >
               Donate
             </button>
           </div>
@@ -171,6 +182,8 @@ const Navbar = () => {
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="p-2 rounded-lg text-slate-700 hover:bg-slate-100 transition-colors"
+              aria-label={isOpen ? 'Close menu' : 'Open menu'}
+              aria-expanded={isOpen}
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -184,11 +197,12 @@ const Navbar = () => {
               <Link
                 to="/"
                 onClick={() => setIsOpen(false)}
-                className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
+                className={`block px-3 py-2 rounded-md text-lg font-medium transition-colors ${
                   isActive('/')
                     ? 'bg-blue-50 text-blue-700'
                     : 'text-slate-700 hover:bg-slate-50'
                 }`}
+                aria-label="Home"
               >
                 Home
               </Link>
@@ -196,31 +210,32 @@ const Navbar = () => {
               <Link
                 to="/about"
                 onClick={() => setIsOpen(false)}
-                className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
+                className={`block px-3 py-2 rounded-md text-lg font-medium transition-colors ${
                   isActive('/about')
                     ? 'bg-blue-50 text-blue-700'
                     : 'text-slate-700 hover:bg-slate-50'
                 }`}
+                aria-label="About Us"
               >
                 About Us
               </Link>
 
               {/* Mobile Marketplace Section */}
               <div className="pt-2">
-                <div className="px-3 py-2 text-xs font-semibold text-slate-500 uppercase tracking-wider">
+                <div className="px-3 py-2 text-sm font-semibold text-slate-500 uppercase tracking-wider">
                   Marketplace
                 </div>
                 <Link
                   to="/for-nonprofits"
                   onClick={() => setIsOpen(false)}
-                  className="block px-6 py-2 text-base font-medium text-slate-700 hover:bg-slate-50 rounded-md transition-colors"
+                  className="block px-6 py-2 text-lg font-medium text-slate-700 hover:bg-slate-50 rounded-md transition-colors"
                 >
                   For Nonprofits
                 </Link>
                 <Link
                   to="/for-freelancers"
                   onClick={() => setIsOpen(false)}
-                  className="block px-6 py-2 text-base font-medium text-slate-700 hover:bg-slate-50 rounded-md transition-colors"
+                  className="block px-6 py-2 text-lg font-medium text-slate-700 hover:bg-slate-50 rounded-md transition-colors"
                 >
                   For Freelancers
                 </Link>
@@ -228,52 +243,52 @@ const Navbar = () => {
                   href="https://hub.maxsys.org"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-between px-6 py-2 text-base font-medium text-slate-700 hover:bg-slate-50 rounded-md transition-colors"
+                  className="flex items-center justify-between px-6 py-2 text-lg font-medium text-slate-700 hover:bg-slate-50 rounded-md transition-colors"
                 >
                   <span>Browse Projects</span>
-                  <ExternalLink className="h-4 w-4" />
+                  <ExternalLink className="h-5 w-5" />
                 </a>
                 <a
                   href="https://hrm.maxsys.org"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-between px-6 py-2 text-base font-medium text-slate-700 hover:bg-slate-50 rounded-md transition-colors"
+                  className="flex items-center justify-between px-6 py-2 text-lg font-medium text-slate-700 hover:bg-slate-50 rounded-md transition-colors"
                 >
                   <span>HRM Portal</span>
-                  <ExternalLink className="h-4 w-4" />
+                  <ExternalLink className="h-5 w-5" />
                 </a>
               </div>
 
               {/* Mobile Tech for Good Section */}
               <div className="pt-2">
-                <div className="px-3 py-2 text-xs font-semibold text-slate-500 uppercase tracking-wider">
+                <div className="px-3 py-2 text-sm font-semibold text-slate-500 uppercase tracking-wider">
                   Tech for Good
                 </div>
                 <Link
                   to="/tech-for-good"
                   onClick={() => setIsOpen(false)}
-                  className="block px-6 py-2 text-base font-medium text-slate-700 hover:bg-slate-50 rounded-md transition-colors"
+                  className="block px-6 py-2 text-lg font-medium text-slate-700 hover:bg-slate-50 rounded-md transition-colors"
                 >
                   Our Programs
                 </Link>
                 <Link
                   to="/how-it-works"
                   onClick={() => setIsOpen(false)}
-                  className="block px-6 py-2 text-base font-medium text-slate-700 hover:bg-slate-50 rounded-md transition-colors"
+                  className="block px-6 py-2 text-lg font-medium text-slate-700 hover:bg-slate-50 rounded-md transition-colors"
                 >
                   How It Works
                 </Link>
                 <Link
                   to="/resources"
                   onClick={() => setIsOpen(false)}
-                  className="block px-6 py-2 text-base font-medium text-slate-700 hover:bg-slate-50 rounded-md transition-colors"
+                  className="block px-6 py-2 text-lg font-medium text-slate-700 hover:bg-slate-50 rounded-md transition-colors"
                 >
                   Resources & Training
                 </Link>
                 <Link
                   to="/partner-with-us"
                   onClick={() => setIsOpen(false)}
-                  className="block px-6 py-2 text-base font-medium text-slate-700 hover:bg-slate-50 rounded-md transition-colors"
+                  className="block px-6 py-2 text-lg font-medium text-slate-700 hover:bg-slate-50 rounded-md transition-colors"
                 >
                   Partner With Us
                 </Link>
@@ -282,17 +297,21 @@ const Navbar = () => {
               <Link
                 to="/contact"
                 onClick={() => setIsOpen(false)}
-                className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
+                className={`block px-3 py-2 rounded-md text-lg font-medium transition-colors ${
                   isActive('/contact')
                     ? 'bg-blue-50 text-blue-700'
                     : 'text-slate-700 hover:bg-slate-50'
                 }`}
+                aria-label="Contact"
               >
                 Contact
               </Link>
 
               <div className="pt-4 border-t border-slate-200">
-                <button className="w-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-4 py-2 rounded-lg hover:from-blue-600 hover:to-indigo-700 transition-all duration-200 text-base font-medium">
+                <button
+                  className="w-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-4 py-2 rounded-lg hover:from-blue-600 hover:to-indigo-700 transition-all duration-200 text-lg font-medium"
+                  aria-label="Donate to Maxsys"
+                >
                   Donate
                 </button>
               </div>
