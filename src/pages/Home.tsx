@@ -19,13 +19,13 @@ const Home = () => {
       <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Tech that serves ↔ People who care
+            Tech that serves - People who care
           </h1>
-          <p className="text-xl mb-6">
-            Bridging the digital divide with trusted, local IT solutions for communities.
+          <p className="text-2xl mb-6">
+            Because technology should lift us up, not leave us behind.
           </p>
           <p className="text-lg max-w-2xl mx-auto mb-8">
-            We're a 501(c)(3) nonprofit connecting verified local tech talent with nonprofits, churches, and small businesses to deliver affordable, human-centered IT support.
+            That’s why we’ve created a trusted platform connecting socially-minded tech talent with local needs. From school clubs to seniors, from nonprofits to neighbors in crisis—we're building a community-first tech support network powered by “Nerds with Hearts.”
           </p>
           {/* CTAs */}
           <div className="flex justify-center gap-4 flex-wrap">
@@ -108,7 +108,7 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-                Our Mission: Tech That Actually Works
+                Maxsys International: Tech with Heart
               </h2>
               <p className="text-xl mb-8 text-blue-100">
                 Founded by veteran and technologist Maryanne Rozier Chiriboga, Maxsys exists 
