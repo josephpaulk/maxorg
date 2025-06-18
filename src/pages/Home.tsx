@@ -25,7 +25,7 @@ const Home = () => {
             Because technology should lift us up, not leave us behind.
           </p>
           <p className="text-lg max-w-2xl mx-auto mb-8">
-            That’s why we’ve created a trusted platform connecting socially-minded tech talent with local needs. From school clubs to seniors, from nonprofits to neighbors in crisis—we're building a community-first tech support network powered by “Nerds with Hearts.”
+            That’s why we’ve created a trusted platform connecting socially-minded tech talent with local needs. From school clubs to seniors, from nonprofits to neighbors in crisis - we're building a community-first tech support network powered by “Nerds with Hearts.”
           </p>
           {/* CTAs */}
           <div className="flex justify-center gap-4 flex-wrap">
@@ -54,10 +54,10 @@ const Home = () => {
           {/* Key Message */}
           <div className="mt-10 max-w-3xl mx-auto">
             <p className="text-lg italic">
-              "Technology should serve communities, not exploit them."
+              Maxsys International Incorporated
             </p>
             <p className="text-base mt-2">
-              Founded by a U.S. Marine Corps veteran, Maxsys is rebuilding trust in technology through local connections and sustainable solutions.
+              501(c)(3) nonprofit connecting verified local tech talent with nonprofits, churches, and small businesses to deliver affordable, human-centered IT support.
             </p>
           </div>
         </div>
