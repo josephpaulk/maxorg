@@ -1,186 +1,121 @@
 import React from 'react';
-import { Heart, Shield, Target, Users, Award, Globe } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Heart, Users, Shield, Award } from 'lucide-react';
 
 const About = () => {
   return (
-    <div className="py-12">
+    <main className="bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-emerald-50 via-teal-50 to-blue-50 py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
-              About Maxis International
-            </h1>
-            <p className="text-xl text-emerald-600 font-semibold mb-8">
-              Veteran-founded. Community-driven. Impact-focused.
-            </p>
-            <p className="text-lg text-slate-700 max-w-4xl mx-auto leading-relaxed">
-              We're building a movement where technology serves humanity, where local expertise meets community needs, 
-              and where every connection strengthens the fabric of digital inclusion.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Mission & Vision */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl font-bold text-slate-800 mb-6">Our Mission</h2>
-              <p className="text-lg text-slate-700 mb-6 leading-relaxed">
-                To bridge the digital divide by connecting verified local tech talent with nonprofits and community 
-                organizations, ensuring that technology serves everyone, everywhere.
-              </p>
-              <p className="text-lg text-slate-700 leading-relaxed">
-                We believe that "Giving is Beautiful" - and through our platform, we make it possible for 
-                tech professionals to contribute their skills meaningfully while building sustainable careers 
-                in community impact.
-              </p>
-            </div>
-            <div className="bg-gradient-to-br from-emerald-100 to-teal-100 p-8 rounded-2xl">
-              <Target className="h-12 w-12 text-emerald-600 mb-4" />
-              <h3 className="text-2xl font-bold text-slate-800 mb-4">Our Vision</h3>
-              <p className="text-slate-700 leading-relaxed">
-                A world where digital equity is not a privilege but a fundamental right, where local communities 
-                are empowered with the tech support they need, and where technology truly leaves no one behind.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Core Values */}
-      <section className="py-20 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">
-              Our Core Values
-            </h2>
-            <p className="text-xl text-slate-600">
-              The principles that guide everything we do
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
-              <Heart className="h-12 w-12 text-emerald-600 mb-4" />
-              <h3 className="text-xl font-bold text-slate-800 mb-4">Community First</h3>
-              <p className="text-slate-600 leading-relaxed">
-                Every decision we make prioritizes community benefit over profit. We measure success by the 
-                lives we touch and the barriers we remove.
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
-              <Shield className="h-12 w-12 text-blue-600 mb-4" />
-              <h3 className="text-xl font-bold text-slate-800 mb-4">Trust & Security</h3>
-              <p className="text-slate-600 leading-relaxed">
-                Through local verification and cybersecurity education, we build networks of trust that 
-                protect and empower communities.
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
-              <Globe className="h-12 w-12 text-green-600 mb-4" />
-              <h3 className="text-xl font-bold text-slate-800 mb-4">Sustainability</h3>
-              <p className="text-slate-600 leading-relaxed">
-                We champion responsible technology use, from device refurbishment to sustainable practices 
-                that protect our planet for future generations.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Our Story */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-slate-800 mb-8 text-center">Our Story</h2>
-            
-            <div className="prose prose-lg max-w-none text-slate-700">
-              <p className="text-xl leading-relaxed mb-6">
-                Maxis International was born from a simple observation: while technology advances at breakneck speed, 
-                too many communities are left behind in the digital divide.
-              </p>
-              
-              <p className="leading-relaxed mb-6">
-                Founded by veterans who understood the power of service and community, we recognized that the solution 
-                wasn't just about providing technology—it was about building sustainable networks of local expertise 
-                and trust.
-              </p>
-              
-              <p className="leading-relaxed mb-6">
-                Today, our platform connects hundreds of verified tech professionals with nonprofits, schools, and 
-                community organizations. We've facilitated thousands of hours of tech support, refurbished countless 
-                devices, and trained community members in cybersecurity and digital literacy.
-              </p>
-              
-              <p className="leading-relaxed">
-                But we're just getting started. Every day, we're working toward a future where "Geeks with Hearts" 
-                isn't just our motto—it's a movement that transforms how technology serves humanity.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Impact Numbers */}
-      <section className="py-20 bg-gradient-to-r from-emerald-500 to-teal-600 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Making a Difference
-            </h2>
-            <p className="text-xl opacity-90">
-              Our impact grows stronger every day
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="text-4xl font-bold mb-2">500+</div>
-              <div className="text-lg opacity-90">Verified Tech Professionals</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold mb-2">200+</div>
-              <div className="text-lg opacity-90">Nonprofit Partners</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold mb-2">10,000+</div>
-              <div className="text-lg opacity-90">Hours of Service</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold mb-2">50+</div>
-              <div className="text-lg opacity-90">Communities Served</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Join Us */}
-      <section className="py-20 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-slate-800 mb-6">
-            Ready to Join Our Mission?
-          </h2>
-          <p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto">
-            Whether you're a tech professional looking to make an impact, an organization needing support, 
-            or someone who believes in our vision—there's a place for you in our community.
+      <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
+        <div className="container mx-auto px-4 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            Our Story: A Vision for Community
+          </h1>
+          <p className="text-xl max-w-2xl mx-auto mb-8">
+            Founded by Maryanne Rozier Chiriboga, Maxsys International is driven by a passion to empower communities through trusted, local technology solutions.
           </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-8 py-4 rounded-lg hover:from-emerald-600 hover:to-teal-700 transition-all duration-200 text-lg font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-              Join Our Community
-            </button>
-            <button className="bg-gradient-to-r from-orange-400 to-pink-500 text-white px-8 py-4 rounded-lg hover:from-orange-500 hover:to-pink-600 transition-all duration-200 text-lg font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-              Support Our Mission
-            </button>
+          <div className="flex justify-center gap-4 flex-wrap">
+            <Link
+              to="/how-it-works"
+              className="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition flex items-center"
+            >
+              Learn How We Work
+              <Heart className="ml-2 h-5 w-5" />
+            </Link>
+            <Link
+              to="/contact"
+              className="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-600 transition flex items-center"
+            >
+              Get Involved
+              <Users className="ml-2 h-5 w-5" />
+            </Link>
           </div>
         </div>
       </section>
-    </div>
+
+      {/* Founder's Story */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl font-bold mb-6">
+              Meet Maryanne Rozier Chiriboga
+            </h2>
+            <p className="text-lg text-gray-600 mb-8">
+              A U.S. Marine Corps veteran, cancer survivor, missionary, and accomplished business owner, Maryanne brings decades of global experience to Maxsys International. Her journey from programming in COBOL using punch cards to launching community technology solutions worldwide shapes our mission to bridge the digital divide.
+            </p>
+            <div className="flex justify-center">
+              <Award className="h-12 w-12 text-blue-600 mb-4" />
+            </div>
+            <p className="text-lg text-gray-600 mb-8">
+              Guided by faith, resilience, and a commitment to service, Maryanne founded Maxsys to deliver technology solutions that are compassionate, practical, and rooted in community needs. Her vision ensures that every project we undertake serves real people in real situations.
+            </p>
+            <blockquote className="text-xl italic text-gray-700 border-l-4 border-blue-600 pl-4 py-2 mb-8">
+              "The most impactful technology solutions are grounded in understanding, driven by compassion, and built to serve those who need them most."
+              <cite className="block mt-2 text-base not-italic text-gray-500">
+                — Maryanne Rozier Chiriboga, Founder
+              </cite>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      {/* Mission and Vision */}
+      <section className="bg-gray-100 py-16">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">
+            Our Mission: Technology for Communities
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-white p-8 rounded-lg shadow-md">
+              <Shield className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+              <h3 className="text-2xl font-semibold mb-4 text-center">
+                Trust and Accountability
+              </h3>
+              <p className="text-gray-600 text-center">
+                Maxsys connects communities with verified, local IT professionals who understand their needs and are committed to their success. Our Tech Hubs ensure accountability through personal relationships and local reputation.
+              </p>
+            </div>
+            <div className="bg-white p-8 rounded-lg shadow-md">
+              <Heart className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+              <h3 className="text-2xl font-semibold mb-4 text-center">
+                Compassionate Solutions
+              </h3>
+              <p className="text-gray-600 text-center">
+                Inspired by Maryanne’s global service, we deliver technology solutions that empower nonprofits, churches, and small businesses without exploiting their limited budgets.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="py-16">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-6">
+            Join Our Mission
+          </h2>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
+            Be part of a movement to make technology accessible, sustainable, and community-focused. Whether you're an IT professional or an organization in need, Maxsys is here to connect you.
+          </p>
+          <div className="flex justify-center gap-4 flex-wrap">
+            <Link
+              to="/for-freelancers"
+              className="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition flex items-center"
+            >
+              Become a Tech Steward
+              <Users className="ml-2 h-5 w-5" />
+            </Link>
+            <Link
+              to="/for-nonprofits"
+              className="bg-transparent border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-blue-600 hover:text-white transition flex items-center"
+            >
+              Get Tech Support
+              <Shield className="ml-2 h-5 w-5" />
+            </Link>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 };
 
