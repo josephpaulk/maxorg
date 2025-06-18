@@ -28,7 +28,7 @@ const Navbar = () => {
               alt="Maxsys International - Tech for Good" 
               className="h-10 w-auto"
             />
-            <span className="text-xl font-bold text-slate-800 hidden sm:inline">Maxsys</span>
+            <span className="text-xl font-bold text-slate-800 hidden sm:inline">Maxsys.ORG</span>
           </Link>
 
           {/* Desktop Navigation */}
