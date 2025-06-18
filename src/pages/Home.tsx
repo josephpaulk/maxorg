@@ -9,7 +9,12 @@ import {
   ExternalLink, 
   CheckCircle, 
   Zap, 
-  Globe 
+  Globe,
+  Monitor,        // New
+  HardDrive,      // New
+  Share2,         // New
+  Palette,        // New
+  Database        // New
 } from 'lucide-react';
 
 const Home = () => {
@@ -135,31 +140,35 @@ Bridging the digital divide with trusted, local IT solutions, Maxsys connects co
               </div>
             </div>
             <div className="relative">
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
-                <div className="grid grid-cols-2 gap-6 text-center">
-                  <div>
-                    <Zap className="h-8 w-8 mx-auto mb-3 text-yellow-300" />
-                    <div className="text-2xl font-bold">99.9%</div>
-                    <div className="text-sm text-blue-200">Uptime</div>
-                  </div>
-                  <div>
-                    <Heart className="h-8 w-8 mx-auto mb-3 text-red-300" />
-                    <div className="text-2xl font-bold">24/7</div>
-                    <div className="text-sm text-blue-200">Support</div>
-                  </div>
-                  <div>
-                    <Globe className="h-8 w-8 mx-auto mb-3 text-green-300" />
-                    <div className="text-2xl font-bold">50</div>
-                    <div className="text-sm text-blue-200">States</div>
-                  </div>
-                  <div>
-                    <Users className="h-8 w-8 mx-auto mb-3 text-blue-300" />
-                    <div className="text-2xl font-bold">10k+</div>
-                    <div className="text-sm text-blue-200">Helped</div>
-                  </div>
-                </div>
-              </div>
-            </div>
+<div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
+  <h3 className="text-lg font-semibold mb-6 text-center text-white">Popular Services</h3>
+  <div className="grid grid-cols-2 gap-4 text-center">
+    <div className="group hover:bg-white/10 rounded-lg p-3 transition-colors">
+      <Monitor className="h-6 w-6 mx-auto mb-2 text-blue-200" />
+      <div className="text-sm font-medium text-white">Computer Support</div>
+    </div>
+    <div className="group hover:bg-white/10 rounded-lg p-3 transition-colors">
+      <HardDrive className="h-6 w-6 mx-auto mb-2 text-green-200" />
+      <div className="text-sm font-medium text-white">Data Recovery</div>
+    </div>
+    <div className="group hover:bg-white/10 rounded-lg p-3 transition-colors">
+      <Globe className="h-6 w-6 mx-auto mb-2 text-purple-200" />
+      <div className="text-sm font-medium text-white">Web Design</div>
+    </div>
+    <div className="group hover:bg-white/10 rounded-lg p-3 transition-colors">
+      <Recycle className="h-6 w-6 mx-auto mb-2 text-yellow-200" />
+      <div className="text-sm font-medium text-white">Device Disposal</div>
+    </div>
+    <div className="group hover:bg-white/10 rounded-lg p-3 transition-colors">
+      <Share2 className="h-6 w-6 mx-auto mb-2 text-pink-200" />
+      <div className="text-sm font-medium text-white">Social Media</div>
+    </div>
+    <div className="group hover:bg-white/10 rounded-lg p-3 transition-colors">
+      <Palette className="h-6 w-6 mx-auto mb-2 text-orange-200" />
+      <div className="text-sm font-medium text-white">Graphic Design</div>
+    </div>
+  </div>
+</div>
           </div>
         </div>
       </section>
