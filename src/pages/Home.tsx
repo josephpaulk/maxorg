@@ -168,8 +168,8 @@ Bridging the digital divide with trusted, local IT solutions, Maxsys connects co
       <div className="text-sm font-medium text-white">Graphic Design</div>
     </div>
   </div>
-</div>
-                <h3 className="text-lg font-semibold mb-6 text-center text-white">Popular Services</h3>
+                <h3 className="text-lg font-semibold mb-6 text-center text-white">IT support for local nonprofits and families</h3>
+  </div>
               </div>
           </div>
         </div>
