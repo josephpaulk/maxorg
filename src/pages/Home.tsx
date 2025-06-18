@@ -52,6 +52,11 @@ const Home = () => {
               <Heart className="ml-2 h-5 w-5" />
             </Link>
           </div>
+          <div className="mt-6 flex items-center justify-center space-x-4 text-sm opacity-90">
+  <span>✓ Veteran Founded</span>
+  <span>✓ Background Checked</span>
+  <span>✓ Local Accountability</span>
+</div>
           {/* Key Message */}
           <div className="mt-10 max-w-3xl mx-auto">
             <p className="text-lg font-bold">
