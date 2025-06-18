@@ -169,6 +169,7 @@ Bridging the digital divide with trusted, local IT solutions, Maxsys connects co
     </div>
   </div>
 </div>
+                <h3 className="text-lg font-semibold mb-6 text-center text-white">Popular Services</h3>
               </div>
           </div>
         </div>
