@@ -29,18 +29,19 @@ const Home = () => {
           </p>
           {/* CTAs */}
           <div className="flex justify-center gap-4 flex-wrap">
-            <Link
-              to="/for-freelancers"
-              className="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition flex items-center"
-            >
-              Join as a Tech Steward
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
+
             <Link
               to="/for-nonprofits"
               className="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-600 transition flex items-center"
             >
-              Post a Project
+              List a Project
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
+                        <Link
+              to="/for-freelancers"
+              className="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition flex items-center"
+            >
+              Join as a Tech Steward
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
             <Link
