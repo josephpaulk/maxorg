@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
+import Insights from './pages/Insights';
 import About from './pages/About';
 import HowItWorks from './pages/HowItWorks';
 import TechForGood from './pages/TechForGood';
@@ -20,6 +21,7 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/insights" element={<Insights />} />            
             <Route path="/about" element={<About />} />
             <Route path="/how-it-works" element={<HowItWorks />} />
             <Route path="/tech-for-good" element={<TechForGood />} />
