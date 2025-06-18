@@ -76,7 +76,7 @@ const Navbar = () => {
                 aria-expanded={activeDropdown === 'marketplace'}
                 aria-label="Marketplace Menu"
               >
-                <span>Marketplace</span>
+                <span>Tech-Hub</span>
                 <ChevronDown className={`h-5 w-5 transition-transform ${activeDropdown === 'marketplace' ? 'rotate-180' : ''}`} />
               </button>
               
@@ -103,7 +103,7 @@ const Navbar = () => {
                     rel="noopener noreferrer"
                     className="flex items-center justify-between px-4 py-2 text-base text-slate-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                   >
-                    <span>Browse Projects</span>
+                    <span>Tech Hub</span>
                     <ExternalLink className="h-4 w-4" />
                   </a>
                   <a
