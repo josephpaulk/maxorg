@@ -44,7 +44,18 @@ const Navbar = () => {
             >
               Home
             </Link>
-
+            <Link
+              to="/insights"
+              className={`text-lg font-medium transition-colors duration-200 ${
+                isActive('/insights')
+                  ? 'text-blue-600 border-b-2 border-blue-600 pb-1'
+                  : 'text-slate-700 hover:text-blue-600'
+              }`}
+              aria-label="About Us"
+            >
+              Insights
+            </Link>
+            
             <Link
               to="/about"
               className={`text-lg font-medium transition-colors duration-200 ${
