@@ -34,7 +34,7 @@ const Home = () => {
               to="/for-nonprofits"
               className="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-600 transition flex items-center"
             >
-              List a Project
+              Post your Project
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
                         <Link
@@ -112,9 +112,7 @@ const Home = () => {
                 Maxsys International: Tech with Heart
               </h2>
               <p className="text-xl mb-8 text-blue-100">
-                Founded by veteran and technologist Maryanne Rozier Chiriboga, Maxsys exists 
-                to provide real tech solutions for real communities. We believe in trust-based, 
-                local-first support that protects and empowers.
+Bridging the digital divide with trusted, local IT solutions, Maxsys connects communities with tech professionals who understand that your success is their success. We believe in relationships over transactions, local accountability over corporate algorithms.
               </p>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
