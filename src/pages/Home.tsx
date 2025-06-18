@@ -91,7 +91,63 @@ const Home = () => {
           </div>
         </div>
       </section>
-
+      {/* Mission Section */}
+      <section className="py-20 bg-gradient-to-r from-blue-600 to-teal-600 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+                Our Mission: Tech That Actually Works
+              </h2>
+              <p className="text-xl mb-8 text-blue-100">
+                Founded by veteran and technologist Maryanne Rozier Chiriboga, Maxsys exists 
+                to provide real tech solutions for real communities. We believe in trust-based, 
+                local-first support that protects and empowers.
+              </p>
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="h-6 w-6 text-green-300 mt-1 flex-shrink-0" />
+                  <span className="text-lg">Veteran-founded and community-focused</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="h-6 w-6 text-green-300 mt-1 flex-shrink-0" />
+                  <span className="text-lg">Secure e-waste recycling prevents fraud</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="h-6 w-6 text-green-300 mt-1 flex-shrink-0" />
+                  <span className="text-lg">Local expertise for local challenges</span>
+                </div>
+              </div>
+            </div>
+            <div className="relative">
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
+                <div className="grid grid-cols-2 gap-6 text-center">
+                  <div>
+                    <Zap className="h-8 w-8 mx-auto mb-3 text-yellow-300" />
+                    <div className="text-2xl font-bold">99.9%</div>
+                    <div className="text-sm text-blue-200">Uptime</div>
+                  </div>
+                  <div>
+                    <Heart className="h-8 w-8 mx-auto mb-3 text-red-300" />
+                    <div className="text-2xl font-bold">24/7</div>
+                    <div className="text-sm text-blue-200">Support</div>
+                  </div>
+                  <div>
+                    <Globe className="h-8 w-8 mx-auto mb-3 text-green-300" />
+                    <div className="text-2xl font-bold">50</div>
+                    <div className="text-sm text-blue-200">States</div>
+                  </div>
+                  <div>
+                    <Users className="h-8 w-8 mx-auto mb-3 text-blue-300" />
+                    <div className="text-2xl font-bold">10k+</div>
+                    <div className="text-sm text-blue-200">Helped</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* Platform Access */}
       <section className="bg-gray-100 py-16">
         <div className="container mx-auto px-4">
