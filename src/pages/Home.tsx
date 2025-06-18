@@ -53,7 +53,7 @@ const Home = () => {
           </div>
           {/* Key Message */}
           <div className="mt-10 max-w-3xl mx-auto">
-            <p className="text-lg bold">
+            <p className="text-lg font-bold">
               Maxsys International Incorporated
             </p>
             <p className="text-base mt-2">
