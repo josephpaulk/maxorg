@@ -14,8 +14,8 @@ const Footer = () => {
                 <Heart className="h-6 w-6 text-white" />
               </div>
               <div>
-                <span className="text-xl font-bold">Maxis International</span>
-                <div className="text-sm text-emerald-400 font-medium">Geeks with Hearts</div>
+                <span className="text-xl font-bold">Maxsys International Incorporated</span>
+                <div className="text-sm text-emerald-400 font-medium">a 501(c)(3) nonprofit organization</div>
               </div>
             </div>
             <p className="text-slate-300 mb-4 max-w-md leading-relaxed">
@@ -23,10 +23,10 @@ const Footer = () => {
               Join us in changing that.
             </p>
             <div className="text-lg font-medium text-emerald-400 mb-2">
-              "Giving is Beautiful"
+              "Geeks with Hearts"
             </div>
             <p className="text-sm text-slate-400">
-              A veteran-founded initiative connecting verified local tech talent with nonprofits and community support needs.
+              A veteran-founded initiative connecting verified local tech talent with nonprofits.
             </p>
           </div>
 
@@ -78,7 +78,7 @@ const Footer = () => {
         <div className="border-t border-slate-700 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-slate-400 text-sm">
-              © 2025 Maxis International Inc. All rights reserved. | The future belongs to those who share it.
+              © 2025 Maxsys International Inc. All rights reserved. | The future belongs to those who share it.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="/privacy" className="text-slate-400 hover:text-emerald-400 text-sm transition-colors">Privacy Policy</a>
