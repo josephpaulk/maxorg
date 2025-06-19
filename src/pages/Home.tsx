@@ -27,10 +27,10 @@ const Home = () => {
             Tech that serves - People who care
           </h1>
           <p className="text-2xl mb-6">
-            Because technology should lift us up, not leave us behind.
+            Because technology should lift us up, not leave us behind. </br>We're building a community-first tech support network
           </p>
-          <p className="text-lg max-w-2xl mx-auto mb-8">
-We're building a community-first tech support network powered by "Nerds with Hearts."          </p>
+          <p className="text-lg max-w-2xl mx-auto font-bold mb-6">
+ powered by "Nerds with Hearts."          </p>
           {/* CTAs */}
           <div className="flex justify-center gap-4 flex-wrap">
 
