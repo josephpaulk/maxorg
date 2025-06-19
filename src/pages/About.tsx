@@ -11,8 +11,10 @@ const About = () => {
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             A Journey Starting with Purpose
           </h1>
+<h2 className="text-2xl font-bold mb-6">
+  Maxsys International Incorporated, a 501(c)(3) nonprofit organization.
+</h2>
           <p className="text-xl max-w-2xl mx-auto mb-8">
-            Maxsys International Incorporated, a 501(c)(3) nonprofit organization.
 Because the best solutions aren't about the latest software or fanciest hardware—they're about people helping people, one community at a time.
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
