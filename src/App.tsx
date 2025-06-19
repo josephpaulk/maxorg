@@ -12,7 +12,7 @@ import ForNonprofits from './pages/ForNonprofits';
 import ForFreelancers from './pages/ForFreelancers';
 import PartnerWithUs from './pages/PartnerWithUs';
 import Contact from './pages/Contact';
-import Contact from './pages/Donate';
+import Donate from './pages/Donate';
 function App() {
   return (
     <Router>
