@@ -28,7 +28,7 @@ const Home = () => {
 </h1>
 <p className="text-2xl mb-6">
   Because technology should lift us up, not leave us behind.<br />
-  We're building a community-first tech support network powered by <span className="font-bold">"Nerds with Hearts."</span>
+  We're building a community-first tech support network powered by "Nerds with Hearts."
 </p>
           {/* CTAs */}
           <div className="flex justify-center gap-4 flex-wrap">
