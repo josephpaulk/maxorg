@@ -30,8 +30,7 @@ const Home = () => {
             Because technology should lift us up, not leave us behind.
           </p>
           <p className="text-lg max-w-2xl mx-auto mb-8">
-            That’s why we’ve created a trusted platform connecting socially-minded tech talent with local needs. From school clubs to seniors, from nonprofits to neighbors in crisis—we're building a community-first tech support network powered by “Nerds with Hearts.”
-          </p>
+We're building a community-first tech support network powered by "Nerds with Hearts."          </p>
           {/* CTAs */}
           <div className="flex justify-center gap-4 flex-wrap">
 
