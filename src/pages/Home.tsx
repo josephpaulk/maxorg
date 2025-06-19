@@ -23,15 +23,13 @@ const Home = () => {
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Tech that serves - People who care
-          </h1>
-          <p className="text-2xl mb-6">
-            Because technology should lift us up, not leave us behind. </br>We're building a community-first tech support network
-          </p>
-          <p className="text-lg max-w-2xl font-bold mb-6">
- powered by "Nerds with Hearts." 
-          </p>
+<h1 className="text-4xl md:text-5xl font-bold mb-4">
+  Tech that serves - People who care
+</h1>
+<p className="text-2xl mb-6">
+  Because technology should lift us up, not leave us behind.<br />
+  We're building a community-first tech support network powered by <span className="font-semibold text-blue-600">"Nerds with Hearts."</span>
+</p>
           {/* CTAs */}
           <div className="flex justify-center gap-4 flex-wrap">
 
