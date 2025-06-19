@@ -178,15 +178,16 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden lg:flex items-center">
-            <button
-              className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-2 rounded-lg hover:from-blue-600 hover:to-indigo-700 transition-all duration-200 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
-              aria-label="Donate to Maxsys"
-            >
-              Donate
-            </button>
-          </div>
+{/* CTA Button */}
+<div className="hidden lg:flex items-center">
+  <Link
+    to="/donate"
+    className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-2 rounded-lg hover:from-blue-600 hover:to-indigo-700 transition-all duration-200 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+    aria-label="Donate to Maxsys"
+  >
+    Donate
+  </Link>
+</div>
 
           {/* Mobile menu button */}
           <div className="lg:hidden">
