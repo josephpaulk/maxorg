@@ -9,10 +9,11 @@ const About = () => {
       <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Our Story: A Vision for Community
+            A Journey Starting with Purpose
           </h1>
           <p className="text-xl max-w-2xl mx-auto mb-8">
-            Founded by Maryanne Rozier Chiriboga, Maxsys International is driven by a passion to empower communities through trusted, local technology solutions.
+            Maxsys International Incorporated, a 501(c)(3) nonprofit organization.
+Because the best solutions aren't about the latest software or fanciest hardware—they're about people helping people, one community at a time.
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
             <Link
