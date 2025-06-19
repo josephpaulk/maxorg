@@ -12,7 +12,7 @@ import ForNonprofits from './pages/ForNonprofits';
 import ForFreelancers from './pages/ForFreelancers';
 import PartnerWithUs from './pages/PartnerWithUs';
 import Contact from './pages/Contact';
-
+import Contact from './pages/Donate';
 function App() {
   return (
     <Router>
@@ -30,6 +30,7 @@ function App() {
             <Route path="/for-freelancers" element={<ForFreelancers />} />
             <Route path="/partner-with-us" element={<PartnerWithUs />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/donate" element={<Donate />} />
           </Routes>
         </main>
         <Footer />
