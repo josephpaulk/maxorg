@@ -43,9 +43,19 @@ const About = () => {
             <p className="text-lg text-gray-600 mb-8">
               A U.S. Marine Corps veteran, cancer survivor, missionary, and accomplished business owner, Maryanne brings decades of global experience to Maxsys International. Her journey from programming in COBOL using punch cards to launching community technology solutions worldwide shapes our mission to bridge the digital divide.
             </p>
-            <div className="flex justify-center">
-              <Award className="h-12 w-12 text-blue-600 mb-4" />
-            </div>
+      <div className="flex justify-center mb-8">
+        <div className="relative">
+          <img 
+            src="/maryanne.png" 
+            alt="Maryanne Rozier Chiriboga, Founder of Maxsys International" 
+            className="w-48 h-48 rounded-full object-cover shadow-lg border-4 border-blue-200"
+          />
+          {/* Optional: Add a subtle overlay or badge */}
+          <div className="absolute bottom-2 right-2 bg-blue-600 rounded-full p-2">
+            <Award className="h-6 w-6 text-white" />
+          </div>
+        </div>
+      </div>
             <p className="text-lg text-gray-600 mb-8">
               Guided by faith, resilience, and a commitment to service, Maryanne founded Maxsys to deliver technology solutions that are compassionate, practical, and rooted in community needs. Her vision ensures that every project we undertake serves real people in real situations.
             </p>
