@@ -139,7 +139,7 @@ Bridging the digital divide with trusted, local IT solutions, Maxsys connects co
             </div>
             <div className="relative">
 <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
-  <h3 className="text-lg font-semibold mb-6 text-center text-white">Popular Services</h3>
+  <h3 className="text-lg font-semibold mb-6 text-center text-white">A platform where neighbors help neighbors</h3>
   <div className="grid grid-cols-2 gap-4 text-center">
     <div className="group hover:bg-white/10 rounded-lg p-3 transition-colors">
       <Monitor className="h-6 w-6 mx-auto mb-2 text-blue-200" />
@@ -155,7 +155,7 @@ Bridging the digital divide with trusted, local IT solutions, Maxsys connects co
     </div>
     <div className="group hover:bg-white/10 rounded-lg p-3 transition-colors">
       <Recycle className="h-6 w-6 mx-auto mb-2 text-yellow-200" />
-      <div className="text-sm font-medium text-white">Device Disposal</div>
+      <div className="text-sm font-medium text-white">IT Asset Management</div>
     </div>
     <div className="group hover:bg-white/10 rounded-lg p-3 transition-colors">
       <Share2 className="h-6 w-6 mx-auto mb-2 text-pink-200" />
